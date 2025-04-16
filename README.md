@@ -47,11 +47,6 @@
 - Cart and checkout functionality
 - Hosted at: [https://namanoncode.me/RedStore/index.html](https://namanoncode.me/RedStore/index.html)
 
----
-
-## 📷 Screenshots
-
-(Add screenshots of your website here for visual impact)
 
 ---
 
