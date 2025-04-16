@@ -1,0 +1,295 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - MyShop</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  
+  <main class="form-page">
+    <h2>Create an Account</h2>
+    <form class="form-box">
+      <label>Full Name</label>
+      <input type="text" required />
+      <label>Email</label>
+      <input type="email" required />
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter number" pattern="[0-9]{10}" required>
+      <label for="location">city</label>
+      <input type="text" id="location" name="location" placeholder="city/town/village" required>
+      <label>Password</label>
+      <input type="password" required />
+      <label>Confirm Password</label>
+      <input type="password" required />
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - MyShop</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <main class="form-page">
+    <h2>Create an Account</h2>
+    <form class="form-box">
+      <label>Full Name</label>
+      <input type="text" name="username" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter number" pattern="[0-9]{10}" required>
+
+      <label for="location">City</label>
+      <input type="text" id="location" name="location" placeholder="city/town/village" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required />
+
+      <label>Confirm Password</label>
+      <input type="password" name="confirmPassword" required />
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+
+  ✅ Connected JavaScript -->
+  <!-- <script>
+    document.querySelector('.form-box').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const form = e.target;
+      const username = form.username.value.trim();
+      const email = form.email.value.trim();
+      const phoneNumber = form.phoneNumber.value.trim();
+      const location = form.location.value.trim();
+      const password = form.password.value;
+      const confirmPassword = form.confirmPassword.value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      const payload = {
+        username: username,
+        phoneNumber: phoneNumber,
+        email: email,
+        location: location,
+        password: password,
+        roles: "User" // ✅ Hardcoded here
+      };
+
+      try {
+        const res = await fetch('https://redstore.azurewebsites.net/khoj/public/create-user', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+        try {
+  const res = await fetch('https://redstore.azurewebsites.net/khoj/public/create-user', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  });
+  try {
+  const res = await fetch('https://redstore.azurewebsites.net/khoj/public/create-user', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    alert("User created successfully!");
+    console.log(data);
+    // window.location.href = "login.html"; // optional redirect
+  } else {
+    const errorText = await res.text(); // 🔥 fix: handle plain text error
+    alert("Error: " + errorText);
+    console.error("Server Error:", errorText);
+  }
+} catch (err) {
+  alert("Network error. Please try again later.");
+  console.error(err);
+}
+
+  
+  </script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - MyShop</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <main class="form-page">
+    <h2>Create an Account</h2>
+    <form class="form-box">
+      <label>Full Name</label>
+      <input type="text" name="username" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter number" pattern="[0-9]{10}" required>
+
+      <label for="location">City</label>
+      <input type="text" id="location" name="location" placeholder="city/town/village" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required />
+
+      <label>Confirm Password</label>
+      <input type="password" name="confirmPassword" required />
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+
+  <script>
+    document.querySelector('.form-box').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const form = e.target;
+      const username = form.username.value.trim();
+      const email = form.email.value.trim();
+      const phoneNumber = form.phoneNumber.value.trim();
+      const location = form.location.value.trim();
+      const password = form.password.value;
+      const confirmPassword = form.confirmPassword.value;
+
+      // Debugging log to check if form inputs are correct
+      console.log({ username, email, phoneNumber, location, password, confirmPassword });
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      const payload = {
+        username: username,
+        phoneNumber: phoneNumber,
+        email: email,
+        location: location,
+        password: password,
+        roles: "User"
+      };
+
+      try {
+        console.log("Sending request to API...");
+
+        const res = await fetch('https://redstore.azurewebsites.net/khoj/public/create-user', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        // Check if the response is empty or malformed
+        if (res.ok) {
+          const data = await res.json();
+          console.log("Response Data:", data);
+          alert("User created successfully!");
+        } else {
+          const errorText = await res.text();
+          alert("Error: " + errorText);
+          console.error("Server Error:", errorText);
+        }
+      } catch (err) {
+        alert("Network error. Please try again later.");
+        console.error("Error details:", err);
+      }
+    });
+    document.querySelector('.form-box').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const username = form.username.value.trim();
+  const email = form.email.value.trim();
+  const phoneNumber = form.phoneNumber.value.trim();
+  const location = form.location.value.trim();
+  const password = form.password.value;
+  const confirmPassword = form.confirmPassword.value;
+
+  // Debugging log to check if form inputs are correct
+  console.log({ username, email, phoneNumber, location, password, confirmPassword });
+
+  if (password !== confirmPassword) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  const payload = {
+    username: username,
+    phoneNumber: phoneNumber,
+    email: email,
+    location: location,
+    password: password,
+    roles: "User"
+  };
+
+  try {
+    console.log("Sending request to API...");
+
+    const res = await fetch('https://redstore.azurewebsites.net/khoj/public/create-user', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    // Check if the response is empty or malformed
+    if (res.ok) {
+      const data = await res.json();
+      console.log("Response Data:", data);
+      alert("User created successfully!");
+
+      // Redirect to login page after successful signup
+      window.location.href = 'login.html';
+    } else {
+      const errorText = await res.text();
+      alert("Error: " + errorText);
+      console.error("Server Error:", errorText);
+    }
+  } catch (err) {
+    alert("Network error. Please try again later.");
+    console.error("Error details:", err);
+  }
+});
+
+  </script>
+
+</body>
+</html>

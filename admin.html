@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopkeeper Product Listing</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <h1>List a Product</h1>
+    <form class="product-form">
+      <input type="text" placeholder="Product Name" required />
+      <input type="number" placeholder="Price" required />
+      <input type="text" placeholder="Category" required />
+      <textarea placeholder="Product Description" required></textarea>
+      <input type="url" placeholder="Image URL (optional)" />
+      <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Products</h2>
+    <div class="product-list">
+      <!-- Product cards will go here manually or via JS -->
+      <div class="product-card">
+        <img src="_" alt="Product Image" />
+        <div class="product-info">
+          <h3>Sample Product</h3>
+          <p class="price">$99</p>
+          <p class="desc">This is a sample product description.</p>
+         
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

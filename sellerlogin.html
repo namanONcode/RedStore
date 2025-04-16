@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - MyShop</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  
+  
+  <main class="form-page">
+    <h2>Login to seller Account</h2>
+    <form class="form-box">
+      <label>Email</label>
+      <input type="email" required />
+      <label>Password</label>
+      <input type="password" required />
+      <a href="admin.html"></a>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="seller sigup.html">Sign Up</a></p>
+    </form>
+  </main>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - MyShop</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <main class="form-page">
+    <h2>Login to Seller Account</h2>
+    <form class="form-box" id="loginForm">
+      <label>Email</label>
+      <input type="email" required />
+      
+      <label>Password</label>
+      <input type="password" required />
+      
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="seller signup.html">Sign Up</a></p>
+    </form>
+  </main>
+
+  <script>
+    // JavaScript to handle redirection after login
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // prevent actual form submission
+      // Here you can add validation or authentication if needed
+      window.location.href = 'admin.html'; // redirect to admin page
+    });
+  </script>
+</body>
+</html>

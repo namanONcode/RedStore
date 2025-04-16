@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - MyShop</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  
+  <main class="form-page">
+    <h2> Create an seller Account</h2>
+    <form class="form-box">
+      <label>Full Name</label>
+      <input type="text" required />
+      <label>Email</label>
+      <input type="email" required />
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter number" pattern="[0-9]{10}" required>
+      <label for="location">city</label>
+      <input type="text" id="location" name="location" placeholder="city/town/village" required>
+      <label>location</label>
+      <label>Password</label>
+      <input type="password" required />
+      <label>Confirm Password</label>
+      <input type="password" required />
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="sellerlogin.html">Login</a></p>
+    </form>
+  </main>
+</body>
+</html>
