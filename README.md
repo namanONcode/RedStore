@@ -7,7 +7,7 @@
 ## 🔗 Project Links
 
 - **🌐 Final Website**: [https://namanoncode.me/RedStore/index.html](https://namanoncode.me/RedStore/index.html)
-- **🧠 Backend GitHub Repository**: [KhojProjectByNamanOnCode](https://github.com/namanONcode/KhojProjectByNamanOnCode/)
+- **🧠 Backend GitHub Repository**: [KhojProjectByNamanOnCode](https://github.com/namanONcode/KhojProjectByNamanOnCode/) **Private REPOSITORY**
 - **🎨 Frontend GitHub Repository**: [RedStore Frontend](https://github.com/namanONcode/RedStore)
 - **🚀 Live Backend Deployment (Azure)**: [https://redstore.azurewebsites.net/](https://redstore.azurewebsites.net/)
 
@@ -32,7 +32,7 @@
 
 ## 📁 Project Structure
 
-### Backend (`KhojProjectByNamanOnCode`)
+### Backend (`KhojProjectByNamanOnCode`) **Private REPOSITORY**
 - User Authentication (Spring Security)
 - Cart Management
 - Product and Order APIs
@@ -45,7 +45,7 @@
 - Shopping UI
 - Product listing and detail pages
 - Cart and checkout functionality
-- Hosted at: [https://namanoncode.me/RedStore/index.html](https://namanoncode.me/RedStore/index.html)
+- Hosted at: [https://namanoncode.me/RedStore/index.html](https://namanoncode.me/RedStore/)
 
 
 ---
